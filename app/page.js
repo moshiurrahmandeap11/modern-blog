@@ -1,9 +1,10 @@
+import AllBlogs from "./components/HomeComponents/AllBlogs/AllBlogs";
 
 
 export default function Home() {
   return (
     <div>
-      <h1>Moshiur</h1>
+      <AllBlogs />
     </div>
   );
 }

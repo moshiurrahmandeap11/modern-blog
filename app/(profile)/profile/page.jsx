@@ -412,7 +412,7 @@ const Profile = () => {
 
     return (
         <>
-            <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 py-8 px-4 sm:px-6 lg:px-8">
+            <div className="min-h-screen text-black bg-gradient-to-br from-purple-50 to-pink-50 py-8 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     {/* Breadcrumb */}
                     <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
@@ -614,7 +614,7 @@ const Profile = () => {
                                                             href={`/blog/${blog?.id}`}
                                                             className="hover:text-purple-600 transition-colors"
                                                         >
-                                                            {blog?.title || 'Untitled'}
+                                                            {blog?.blogtitle || 'Untitled'}
                                                         </Link>
                                                     </h3>
                                                     
@@ -666,7 +666,7 @@ const Profile = () => {
                                                                 <Trash2 className="h-3.5 w-3.5 text-gray-500 hover:text-red-600" />
                                                             </button>
                                                             <Link 
-                                                                href={`/blog/${blog?.id}`}
+                                                                href={`/blog-details/${blog?.id}`}
                                                                 className="text-purple-600 hover:text-purple-800 text-xs font-medium ml-1"
                                                             >
                                                                 Read
